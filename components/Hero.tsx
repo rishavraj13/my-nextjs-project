@@ -2,6 +2,7 @@ import { FaLocationArrow } from 'react-icons/fa'
 import Magicbutton from './ui/Magicbutton'
 import { Spotlight } from './ui/spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import { BentoGrid } from './ui/BentoGrid'
 
 function Hero() {
     return (
@@ -31,28 +32,28 @@ w-[50vw]"
             flex items-center
              justify-center absolute top-0 left-0">
 
-                
+
                 <div className="absolute pointer-events-none inset-0 flex items-center 
                 justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-                
+
 
             </div>
 
             <div className='flex justify-center relative my-20 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-[60vw] flex
-                flex-col items-center justify-center '> 
+                flex-col items-center justify-center '>
                     <h2 className='uppercase tracking-widest text-xs text-center
                     text-blue-100 max-w-80'>
                         Dynamic Web Magic with Next.js
                     </h2>
 
 
-                    <TextGenerateEffect 
-                    className ="text-center text-[40px]
+                    <TextGenerateEffect
+                        className="text-center text-[40px]
                     md:text-5xl lg:text-4xl"
 
-                    words = "Transforming concepts into seamless User Experience" />
+                        words="Transforming concepts into seamless User Experience" />
 
                     <p className='text-center md:tracking-wider4
                     mb-4 text-sm md:text-lg lg:text-1xl'>
@@ -62,14 +63,17 @@ w-[50vw]"
 
                     <a href="#about">
                         <Magicbutton
-                        title="Show my work" 
-                        icon = {<FaLocationArrow />}
-                        position='right'
+                            title="Show my work"
+                            icon={<FaLocationArrow />}
+                            position='right'
                         />
                     </a>
+
+
                 </div>
 
             </div>
+            
 
         </div>
     )
